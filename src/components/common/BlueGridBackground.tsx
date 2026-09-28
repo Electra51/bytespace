@@ -4,7 +4,7 @@ export default function BlueGridBackground({
   children: React.ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-[#0639dc]">
+    <section className="relative overflow-hidden bg-persian-blue-800">
       <div
         className="absolute inset-0"
         style={{

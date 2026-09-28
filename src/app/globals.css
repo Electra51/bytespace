@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  /* ===== fonts ===== */
+  --font-poppins: var(--font-poppins);
+  --font-satoshi: var(--font-satoshi);
+
+  /* ===== Colors ===== */
+  --color-shuttle-gray-950: #242528;
+  --color-persian-blue-800: #003be2;
+  --color-shuttle-gray-100: #e5e6e8;
+
+  /* ===== Brand Colors ===== */
+  --color-electric-lime-400: #d4fb20;
+}
