@@ -1,11 +1,14 @@
-import BlueGridBackground from "@/components/common/BlueGridBackground";
-import Login from "@/pages/Login";
+import AuthLayout from "@/components/common/AuthLayout";
+import LoginForm from "@/pages/Login";
 
 const LoginPage = () => {
   return (
-    <BlueGridBackground>
-      <Login />
-    </BlueGridBackground>
+    <AuthLayout
+      visualTitle="Sign in with ease"
+      visualDescription="Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge."
+    >
+      <LoginForm />
+    </AuthLayout>
   );
 };
 

@@ -1,93 +1,111 @@
 import Image from "next/image";
+import Link from "next/link";
 
-const Login = () => {
+const LoginForm = () => {
   return (
-    <div className="min-h-screen w-full px-4 py-8 sm:px-8 lg:px-16 xl:px-24">
-      <div className="mx-auto flex max-w-7xl items-center justify-center gap-10 xl:gap-14">
-        <div className="hidden flex-1 flex-col justify-center lg:flex">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/images/logo.svg"
-              alt="ByteSpace logo"
-              width={29}
-              height={32}
-              className="w-auto h-auto"
-            />
-          </div>
+    <>
+      <div className="mb-8 md:mb-3 lg:mb-8">
+        <p className="text-lg font-normal text-persian-blue-800">Sign In</p>
 
-          <div className="max-w-140 mt-13.25">
-            <h1 className="font-poppins text-[20px] font-semibold leading-[120%] tracking-[-1%] bg-shuttle-gradient bg-clip-text text-transparent">
-              Sign in with ease
-            </h1>
-            <p className="mt-4 max-w-118.75 text-lg text-shuttle-gray-50 leadin-[160%]">
-              Experience a seamless and efficient sign-in process that grants
-              you instant access to a world of knowledge.
-            </p>
-          </div>
-
-          <div className="relative mt-10 max-w-130">
-            <div className="overflow-hidden">
-              <Image
-                src="/images/register-image.png"
-                alt="Register preview"
-                width={640}
-                height={520}
-                priority
-                className="h-auto w-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full max-w-144.75 max-h-196 rounded-3xl bg-white p-6  sm:p-8 lg:p-10">
-          <div className="mb-8">
-            <p className="text-lg font-normal text-persian-blue-800">
-              Create an Account
-            </p>
-            <h2 className="mt-2 font-satoshi font-semibold max-w-113.25 text-[44px] leading-[120%] tracking-[-1%]  text-shuttle-gray-950">
-              Welcome to ByteSpace
-            </h2>
-          </div>
-
-          <form className="space-y-6">
-            <div>
-              <label className="mb-2 block text-base font-medium text-[#111827]/80">
-                Email
-              </label>
-              <input
-                type="email"
-                defaultValue="designer@example.com"
-                className="w-full rounded-[18px] border border-[#d4d4d4] bg-white px-4 py-4 text-lg text-[#111827] outline-none transition focus:border-[#003be2] focus:ring-2 focus:ring-[#003be2]/20"
-              />
-            </div>
-
-            <div>
-              <label className="mb-2 block text-base font-medium text-[#111827]/80">
-                Password
-              </label>
-              <input
-                type="password"
-                defaultValue="********"
-                className="w-full rounded-[18px] border border-[#d4d4d4] bg-white px-4 py-4 text-lg text-[#111827] outline-none transition focus:border-[#003be2] focus:ring-2 focus:ring-[#003be2]/20"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="mt-4 flex w-full items-center justify-center rounded-full bg-[#d6ff20] px-5 py-4 text-lg font-bold text-[#111827] shadow-[0_12px_24px_rgba(214,255,32,0.4)] transition hover:brightness-95"
-            >
-              Continue
-            </button>
-          </form>
-
-          <p className="mt-8 text-center text-base text-[#111827]">
-            New user?{" "}
-            <span className="font-bold underline">Create an account</span>
-          </p>
-        </div>
+        <h1 className="mt-2 max-w-113.25 font-satoshi text-[30px] lg:text-[44px] font-semibold leading-[120%] tracking-[-1%] text-shuttle-gray-950">
+          Welcome Back
+        </h1>
       </div>
-    </div>
+
+      <form className="mt-10 space-y-3 lg:space-y-8 xl:space-y-6">
+        <div>
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-shuttle-gray-950"
+          >
+            Email
+          </label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            defaultValue="designer@example.com"
+            className="mt-2 w-full rounded-xl border border-shuttle-gray-100 px-4 py-3 text-lg text-shuttle-gray-400 outline-none transition focus:border-electric-lime-400 focus:ring-2 focus:ring-electric-lime-400"
+          />
+        </div>
+
+        <div>
+          <label
+            htmlFor="password"
+            className="block text-sm font-medium text-shuttle-gray-950"
+          >
+            Password
+          </label>
+
+          <input
+            id="password"
+            name="password"
+            type="password"
+            defaultValue="********"
+            className="mt-2 w-full rounded-xl border border-shuttle-gray-100 px-4 py-3 text-lg text-shuttle-gray-400 outline-none transition focus:border-electric-lime-400 focus:ring-2 focus:ring-electric-lime-400"
+          />
+        </div>
+
+        <div className="flex justify-end">
+          <button
+            type="submit"
+            className="mt-4 flex items-center justify-center rounded-full bg-electric-lime-400 px-6 py-3 text-lg font-medium leading-[120%] text-shuttle-gray-950"
+          >
+            Sign In
+          </button>
+        </div>
+      </form>
+
+      <div className="mb-8 md:mb-10 mt-12 md:mt-16.25 flex items-center gap-3">
+        <div className="h-px flex-1 bg-black-200" />
+
+        <span className="text-lg leading-[160%] text-black-400">or</span>
+
+        <div className="h-px flex-1 bg-black-200" />
+      </div>
+
+      <div className="mb-12 md:mb-15.25 flex items-center justify-center gap-4">
+        <button
+          type="button"
+          aria-label="Continue with Google"
+          className="flex h-12 w-12 md:h-18 md:w-18 items-center justify-center rounded-2xl md:rounded-3xl border border-black-200 transition-colors duration-200 hover:bg-gray-50"
+        >
+          <Image
+            src="/images/google.svg"
+            alt=""
+            width={34}
+            height={34}
+            className="h-6 w-6 md:h-8.5 md:w-8.5"
+          />
+        </button>
+
+        <button
+          type="button"
+          aria-label="Continue with Facebook"
+          className="flex h-12 w-12 md:h-18 md:w-18 items-center justify-center rounded-2xl md:rounded-3xl border border-black-200 transition-colors duration-200 hover:bg-gray-50"
+        >
+          <Image
+            src="/images/fb.svg"
+            alt=""
+            width={34}
+            height={34}
+            className="h-6 w-6 md:h-8.5 md:w-8.5"
+          />
+        </button>
+      </div>
+
+      <p className="text-center text-base leading-[160%] text-black-400">
+        New user?{" "}
+        <Link
+          href="/register"
+          className="text-base font-normal text-persian-blue-800 hover:underline"
+        >
+          Create an account
+        </Link>
+      </p>
+    </>
   );
 };
 
-export default Login;
+export default LoginForm;
