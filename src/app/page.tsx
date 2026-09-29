@@ -1,3 +1,7 @@
-export default function Home() {
-  return <main>This is bytespace landing page</main>;
-}
+import Home from "@/pages/Home";
+
+const HomePage = () => {
+  return <Home />;
+};
+
+export default HomePage;
