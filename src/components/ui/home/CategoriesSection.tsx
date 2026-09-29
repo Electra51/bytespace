@@ -29,7 +29,7 @@ const categories = [
 
 export default function CategoriesSection() {
   return (
-    <section className="pb-20 md:pb-28 px-5 bg-white">
+    <section className="pb-20 md:pb-20 px-5 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center w-full lg:w-229.25 mx-auto mb-14 md:mb-17">
           <p className="text-3xl sm:text-4xl md:text-[36px] font-poppins font-semibold text-shuttle-gray-950 leading-[120%] mb-4 md:text-nowrap text-center">

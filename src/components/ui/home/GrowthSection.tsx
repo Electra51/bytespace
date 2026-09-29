@@ -8,9 +8,9 @@ const stats = [
 
 export default function GrowthSection() {
   return (
-    <section className="relative lg:pb-8 px-5 overflow-hidden pt-18 md:pt-30">
+    <section className="relative lg:pb-8 px-5 overflow-hidden pt-18 md:pt-6">
       <div
-        className="absolute top-0 lg:bottom-50 -left-54 lg:-left-8 w-144.25 h-124.25 lg:w-244.25 lg:h-224.25 rounded-full opacity-60 blur-2xl pointer-events-none rotate-45 z-20"
+        className="absolute top-0 lg:-top-50 -left-54 lg:-left-8 w-144.25 h-124.25 lg:w-244.25 lg:h-224.25 rounded-full opacity-60 blur-2xl pointer-events-none rotate-45 z-20"
         style={{
           background:
             "radial-gradient(circle, #CBFC01, #CBFC013B, #CBFC010F, #CBFC0100)",

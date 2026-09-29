@@ -140,7 +140,7 @@ export default function Hero() {
           </form>
 
           <div className="relative flex justify-center items-end pb-10">
-            <div className="hidden md:flex absolute top-[22%] md:top-[166%] left-[10%] sm:left-[3%] md:left-[7%] bg-white rounded-xl shadow-xl p-4 z-30 w-44 sm:w-52 animate-float-slow">
+            <div className="hidden md:block absolute top-[22%] md:top-[166%] left-[10%] sm:left-[3%] md:left-[7%] bg-white rounded-xl shadow-xl p-4 z-30 w-44 sm:w-52 animate-float-slow">
               <p className="text-shuttle-gray-950 font-medium text-sm md:text-base">
                 UI/UX Design
               </p>
@@ -149,7 +149,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <div className="hidden md:flex absolute top-[10%] md:top-[235%] right-[-4%] md:right-[5%] sm:right-[12%] bg-white rounded-xl shadow-xl p-4 z-30 w-40 sm:w-48 animate-float-medium">
+            <div className="hidden md:block absolute top-[10%] md:top-[235%] right-[-4%] md:right-[5%] sm:right-[12%] bg-white rounded-xl shadow-xl p-4 z-30 w-40 sm:w-48 animate-float-medium">
               <p className="text-shuttle-gray-950 text-xs md:text-sm font-medium mb-1">
                 Learning Progress
               </p>
