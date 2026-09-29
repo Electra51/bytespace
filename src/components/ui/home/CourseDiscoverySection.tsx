@@ -1,24 +1,22 @@
 "use client";
 
-import CategoryChip from "@/components/common/CategoryChip";
 import CourseCard from "@/components/common/CourseCard";
-import { categories, courses, INITIAL_CHIPS } from "@/data";
+import TagChip from "@/components/common/TagChip";
+import { courses, INITIAL_CHIPS, tags } from "@/data";
 import { useMemo, useState } from "react";
 
 export default function CourseDiscoverySection() {
-  const [activeCategory, setActiveCategory] = useState<string>("featured");
-  const [showAllCategories, setShowAllCategories] = useState(false);
+  const [activeTag, setActiveTag] = useState<string>("featured");
+  const [showAllTags, setShowAllTags] = useState(false);
 
-  const visibleCategories = showAllCategories
-    ? categories
-    : categories.slice(0, INITIAL_CHIPS);
+  const visibleTags = showAllTags ? tags : tags.slice(0, INITIAL_CHIPS);
 
   const filteredCourses = useMemo(() => {
-    if (activeCategory === "featured") {
+    if (activeTag === "featured") {
       return courses.filter((course) => course.isFeatured);
     }
-    return courses.filter((course) => course.category === activeCategory);
-  }, [activeCategory]);
+    return courses.filter((course) => course.category === activeTag);
+  }, [activeTag]);
 
   return (
     <section className="py-16 md:py-18 px-5 bg-white">
@@ -38,22 +36,21 @@ export default function CourseDiscoverySection() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-2.5 md:gap-4 mb-12 md:mb-19.25 max-w-6xl mx-auto">
-          {visibleCategories.map((category) => (
-            <CategoryChip
-              key={category.id}
-              name={category.name}
-              isActive={activeCategory === category.id}
-              onClick={() => setActiveCategory(category.id)}
+          {visibleTags.map((tag) => (
+            <TagChip
+              key={tag.id}
+              name={tag.name}
+              isActive={activeTag === tag.id}
+              onClick={() => setActiveTag(tag.id)}
             />
           ))}
 
-          {/* More / Less Button */}
-          {categories.length > INITIAL_CHIPS && (
+          {tags.length > INITIAL_CHIPS && (
             <button
-              onClick={() => setShowAllCategories(!showAllCategories)}
+              onClick={() => setShowAllTags(!showAllTags)}
               className="whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold text-persian-blue-800 hover:bg-shuttle-gray-50 transition-colors cursor-pointer"
             >
-              {showAllCategories ? "− Less" : "+ More"}
+              {showAllTags ? "− Less" : "+ More"}
             </button>
           )}
         </div>

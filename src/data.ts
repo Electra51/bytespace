@@ -1,4 +1,4 @@
-import type { Category, Course, Testimonial } from "./types";
+import type { Course, Tag, Testimonial } from "./types";
 
 export const footerLinks = [
   {
@@ -60,7 +60,7 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
-export const categories: Category[] = [
+export const tags: Tag[] = [
   { id: "featured", name: "Featured" },
   { id: "music", name: "Music" },
   { id: "drawing-painting", name: "Drawing & Painting" },

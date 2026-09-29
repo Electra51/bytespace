@@ -61,8 +61,8 @@ const Testimonials = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 mb-12 lg:mb-16">
-          <div className="lg:w-1/2 mt-9.75">
-            <h2 className="font-poppins font-semibold text-black text-[44px] leading-[120%]">
+          <div className="lg:w-1/2 md:mt-9.75">
+            <h2 className="font-poppins font-semibold text-black text-3xl sm:text-4xl md:text-[44px] leading-[120%]">
               Discover What Our
               <br />
               Community Is Saying

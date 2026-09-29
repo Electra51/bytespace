@@ -26,7 +26,7 @@ export default function CourseCard({ course }: CourseCardProps) {
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500 rounded-xl"
         />
 
-        <div className="absolute bottom-4.5 left-3 right-3 flex flex-wrap gap-1.5">
+        <div className="absolute bottom-4.5 left-3 right-3 flex flex-wrap gap-4">
           <span className="bg-[#F6F6F699] backdrop-blur-sm text-[10px] sm:text-xs px-2.5 py-1 rounded-full font-medium text-black-700">
             {course.lessons} Lessons
           </span>

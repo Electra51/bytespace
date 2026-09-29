@@ -24,7 +24,7 @@ export interface Course {
   isFeatured?: boolean;
 }
 
-export interface Category {
+export interface Tag {
   id: string;
   name: string;
 }

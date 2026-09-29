@@ -19,7 +19,7 @@ const studentAvatars = [
 
 export default function FeaturesSection() {
   return (
-    <section className="relative md:pb-5 pt-20 md:pt-0 px-5 overflow-hidden">
+    <section className="relative md:pb-5 pt-20 lg:pt-0 px-5 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           <div className="relative flex justify-center lg:justify-start order-2 lg:order-1">

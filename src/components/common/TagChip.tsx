@@ -1,14 +1,10 @@
-interface CategoryChipProps {
+interface TagChipProps {
   name: string;
   isActive: boolean;
   onClick: () => void;
 }
 
-export default function CategoryChip({
-  name,
-  isActive,
-  onClick,
-}: CategoryChipProps) {
+export default function TagChip({ name, isActive, onClick }: TagChipProps) {
   return (
     <button
       onClick={onClick}

@@ -7,7 +7,6 @@ const Footer = () => {
     <footer className="w-full border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 lg:py-16">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-23">
-          {/* Left  part */}
           <div className="lg:w-132 flex flex-col gap-4">
             <Logo variant="footer" />
 
@@ -39,7 +38,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Right part */}
           <div className="lg:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-10 lg:gap-15 xl:gap-20.75 lg:mt-12">
             {footerLinks.map((column) => (
               <div key={column.title} className="flex flex-col gap-4">
