@@ -29,7 +29,7 @@ const categories = [
 
 export default function CategoriesSection() {
   return (
-    <section className="py-20 md:py-28 px-5 bg-white">
+    <section className="pb-20 md:pb-28 px-5 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center md:w-198 mx-auto mb-14 md:mb-17">
           <p className="text-2xl md:text-[36px] font-poppins font-semibold text-shuttle-gray-950 leading-[120%] mb-4 md:text-nowrap text-center">

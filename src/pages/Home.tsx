@@ -1,6 +1,7 @@
 import Logo from "@/components/common/Logo";
 import Footer from "@/components/layout/Footer";
 import CategoriesSection from "@/components/ui/home/CategoriesSection";
+import CourseDiscoverySection from "@/components/ui/home/CourseDiscoverySection";
 import CreatorCTA from "@/components/ui/home/CreatorCTA";
 import FeaturesSection from "@/components/ui/home/FeaturesSection";
 import GrowthSection from "@/components/ui/home/GrowthSection";
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <div>
       <Logo />
+      <CourseDiscoverySection />
       <CategoriesSection />
       <GrowthSection />
       <FeaturesSection />
