@@ -16,7 +16,7 @@ export default function BlueGridBackground({
         }}
       />
 
-      <div className="relative z-10 min-h-screen flex justify-center items-center">
+      <div className="relative z-10 flex justify-center items-center">
         {children}
       </div>
     </section>
