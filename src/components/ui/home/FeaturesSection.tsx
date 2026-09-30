@@ -19,7 +19,7 @@ const studentAvatars = [
 
 export default function FeaturesSection() {
   return (
-    <section className="relative md:pb-5 pt-20 lg:pt-0 px-5 overflow-hidden">
+    <section className="relative md:pb-5 pt-10 md:pt-20 lg:pt-0 px-5 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           <div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
@@ -51,7 +51,7 @@ export default function FeaturesSection() {
                 </div>
               </div>
 
-              <div className="absolute top-[32%] left-[-5%] sm:left-[-10%] bg-persian-blue-800 rounded-xl shadow-xl p-4 sm:p-5 z-20 animate-float-medium">
+              <div className="absolute top-[40%] md:top-[32%] left-[-5%] sm:left-[-10%] bg-persian-blue-800 rounded-xl shadow-xl p-4 sm:p-5 z-20 animate-float-medium">
                 <p className="text-shuttle-gray-50 text-sm sm:text-base font-medium">
                   Year to Date
                 </p>
@@ -79,10 +79,11 @@ export default function FeaturesSection() {
                   alt=""
                   width={210}
                   height={210}
+                  className="w-30 h-30 md:w-52.5 md:h-52.5 rotate-135 md:rotate-0 z-40"
                 />
               </div>
 
-              <div className="absolute bottom-[25%] right-[-5%] sm:right-[-0%] bg-white rounded-xl shadow-xl p-4 sm:p-5 z-30 w-52 sm:w-64.5 animate-float-fast">
+              <div className="absolute bottom-[25%] right-[1%] sm:right-[-0%] bg-white rounded-xl shadow-xl p-4 sm:p-5 z-30 w-40 md:w-64.5 animate-float-fast">
                 <p className="text-shuttle-gray-950 text-sm sm:text-base font-medium mb-1">
                   Happy Students
                 </p>
@@ -118,7 +119,7 @@ export default function FeaturesSection() {
                       </div>
                     ))}
                   </div>
-                  <span className="bg-electric-lime-400 text-gray-900 text-xs font-bold h-10 w-10 rounded-full flex justify-center items-center -ml-3">
+                  <span className="bg-electric-lime-400 text-gray-900 text-xs font-bold h-7 w-7 md:h-10 md:w-10 rounded-full flex justify-center items-center -ml-3">
                     2K+
                   </span>
                 </div>
@@ -131,7 +132,7 @@ export default function FeaturesSection() {
               Create & Manage Courses Easily.
             </h2>
 
-            <p className="text-shuttle-gray-700 text-sm sm:text-lg leading-relaxed my-10 max-w-143.5">
+            <p className="text-shuttle-gray-700 text-sm sm:text-lg leading-relaxed my-6 md:my-10 max-w-143.5">
               <span className="font-bold text-shuttle-gray-950">ByteSpace</span>{" "}
               supports individuals or entities in the creation, publication, and
               administration of educational courses.

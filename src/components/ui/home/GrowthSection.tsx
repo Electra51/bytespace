@@ -8,9 +8,9 @@ const stats = [
 
 export default function GrowthSection() {
   return (
-    <section className="relative lg:pb-8 px-5 overflow-hidden pt-18 md:pt-6">
+    <section className="relative lg:pb-8 px-5 overflow-hidden pt-12 md:pt-6">
       <div
-        className="absolute top-0 lg:-top-50 -left-54 lg:-left-8 w-144.25 h-124.25 lg:w-244.25 lg:h-224.25 rounded-full opacity-60 blur-2xl pointer-events-none rotate-45 z-20"
+        className="absolute -top-32.25 lg:-top-50 left-41 lg:-left-8 w-100 h-100 lg:w-244.25 lg:h-224.25 rounded-full opacity-60 blur-2xl pointer-events-none rotate-45 z-20"
         style={{
           background:
             "radial-gradient(circle, #CBFC01, #CBFC013B, #CBFC010F, #CBFC0100)",
@@ -19,7 +19,7 @@ export default function GrowthSection() {
       />
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 items-center">
-          <div className="order-2 lg:order-1 lg:pr-8">
+          <div className="order-1 lg:order-1 lg:pr-8">
             <h2 className="text-3xl sm:text-4xl md:text-[44px] font-semibold font-poppins text-shuttle-gray-950 leading-[120%] mb-8">
               Your Path to Professional Growth Starts Here!
             </h2>
@@ -46,7 +46,7 @@ export default function GrowthSection() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end">
+          <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end mt-16 md:mt-0">
             <div className="relative w-full max-w-md lg:max-w-lg">
               <Image
                 src="/images/home-image/12.png"
@@ -57,15 +57,16 @@ export default function GrowthSection() {
                 priority
               />
 
-              <div className="absolute bottom-[51%] right-0 sm:right-[-18%] z-30">
+              <div className="absolute bottom-[55%] md:bottom-[51%] right-0 sm:right-[-18%] z-30">
                 <Image
                   src={"/icons/shape2.svg"}
                   alt=""
                   width={210}
                   height={210}
+                  className="w-30 h-30 md:w-52.5 md:h-52.5 rotate-135 md:rotate-0"
                 />
               </div>
-              <div className="absolute top-[35%] right-[-5%] sm:right-[-8%] bg-white rounded-xl shadow-xl p-4 sm:p-5 z-20 w-40 sm:w-55.75 animate-float-medium">
+              <div className="absolute top-[35%] right-[-1%] sm:right-[-8%] bg-white rounded-xl shadow-xl p-4 sm:p-5 z-20 w-34 sm:w-55.75 animate-float-medium">
                 <p className="text-xs sm:text-sm text-shuttle-gray-950 font-medium mb-1">
                   Learning Progress
                 </p>

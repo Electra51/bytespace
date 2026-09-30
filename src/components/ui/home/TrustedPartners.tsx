@@ -35,14 +35,14 @@ export default function TrustedPartners() {
         {partners.map((partner) => (
           <div
             key={partner.id}
-            className="flex items-center gap-2.5 opacity-60 hover:opacity-100 transition-opacity duration-300"
+            className="flex items-center gap-2.5 hover:opacity-100 transition-opacity duration-300"
           >
             <Image
               src={partner.logo}
               alt={`${partner.name} logo`}
               width={167}
               height={41}
-              className="w-full h-full object-contain"
+              className="w-28 md:w-37.5 h-full object-contain"
             />
           </div>
         ))}
