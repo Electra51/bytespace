@@ -95,7 +95,7 @@ export default function CourseCard({ course }: CourseCardProps) {
                   </div>
                 ))}
               </div>
-              <span className="bg-electric-lime-400 text-shuttle-gray-950 text-xs font-medium h-9 w-9 rounded-full flex justify-center items-center -ml-3">
+              <span className="bg-electric-lime-400 text-shuttle-gray-950 text-xs font-medium h-7 w-7 md:h-9 md:w-9 rounded-full flex justify-center items-center -ml-3">
                 26+
               </span>
             </div>

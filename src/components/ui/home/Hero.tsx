@@ -72,7 +72,7 @@ export default function Hero() {
           alt=""
           width={100}
           height={100}
-          className="absolute top-[45%] md:top-[40%] -right-14.5 md:right-[8%] w-32 h-32 md:w-45 md:h-45 z-10 animate-float-medium"
+          className="absolute top-[31%] md:top-[40%] -right-14.5 md:right-[8%] w-32 h-32 md:w-45 md:h-45 z-10 animate-float-medium"
           aria-hidden="true"
         />
 
@@ -81,7 +81,7 @@ export default function Hero() {
           alt=""
           width={150}
           height={150}
-          className="absolute top-[25%] md:top-[20%] right-[-17%] md:right-[-2%] w-36 h-36 md:w-66 md:h-66 z-10 animate-float-slow"
+          className="absolute top-[50%] md:top-[20%] right-[-17%] md:right-[-2%] w-36 h-36 md:w-66 md:h-66 z-10 animate-float-slow"
           aria-hidden="true"
         />
 
@@ -164,7 +164,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="absolute top-[10%] md:top-[680%] left-[60%] md:left-[2%] sm:left-[7%] bg-white rounded-xl shadow-xl p-4 z-30 w-38 sm:w-64.5 animate-float-fast">
+            <div className="absolute top-[67%] md:top-[680%] left-[60%] md:left-[2%] sm:left-[7%] bg-white rounded-xl shadow-xl p-4 z-30 w-38 sm:w-64.5 animate-float-fast">
               <p className="text-shuttle-gray-950 font-medium text-sm md:text-[16px] mb-0.5">
                 Happy Students
               </p>
