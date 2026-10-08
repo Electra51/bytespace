@@ -6,8 +6,6 @@ ByteSpace is a modern online course and learning management platform designed to
 
 🌐 Live Demo: https://bytespace-iota.vercel.app/
 
-
-
 ## Features
 
 - Explore Diverse Courses: Access courses spanning UI/UX Design, Data Science, Productivity, Tech, and Creative Arts.
@@ -20,8 +18,9 @@ ByteSpace is a modern online course and learning management platform designed to
 
 - User Authentication Flow: Ready-to-integrate pages for Sign In and User Registration (/login, /register).
 
-## Tech Stack
+- Responsive: Mobile-first pixel-perfect responsive design from figma
 
+## Tech Stack
 
 **Technology**: Next.js (React Framework), Typescript
 
@@ -30,7 +29,6 @@ ByteSpace is a modern online course and learning management platform designed to
 **Fonts**: Custom Satoshi & Google Fonts
 
 **Deployment**: Vercel
-
 
 ## Getting Started
 
@@ -41,23 +39,26 @@ Follow these steps to run the project locally on your machine:
 - git clone my repository
 - cd bytespace
 
-
 2. Install Dependencies
 
 - npm install
-
 
 3. Run the Development Server
 
 - npm run dev
 
-
 Open http://localhost:3000 in your browser to see the live preview.
 
+## Preview
 
+<div align="start">
+  <img src="hero.png" alt="Home Page Preview" width="800"/>
+</div>
 
 ---
+
 ## Author
+
 - Electra51
 
 Portfolio: https://nextjs-my-portfolio-electra51.vercel.app/
@@ -66,8 +67,6 @@ GitHub: @electra51
 
 LinkedIn: https://www.linkedin.com/in/safayet-nur/
 
-
-
 ---
 
 ### Star this repository if you found it helpful!
@@ -75,4 +74,3 @@ LinkedIn: https://www.linkedin.com/in/safayet-nur/
 Made with ❤️ by Electra51
 
 **Happy Coding!** 🚀
-
